@@ -21,7 +21,7 @@ describe "nested hash" do
     end
   end
 
-  describe "adding_matz" do 
+  describe "adding_matz" do
     it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do
       expect(adding_matz.keys).to include(:yukihiro_matsumoto)
     end
@@ -29,7 +29,7 @@ describe "nested hash" do
 
   describe "#changing_alan" do
     it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do
-      expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
+      expect(programmer_hash[:alan_kay][:known_for]).to eq("GUI")
     end
   end
 
